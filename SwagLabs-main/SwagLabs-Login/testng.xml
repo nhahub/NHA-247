@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="SauceDemo Test Suite" >
+    <test name="E2E Tests">
+        <classes>
+            <class name="E2E"/>
+        </classes>
+    </test>
+
+    <test name="Login Tests">
+        <classes>
+            <class name="LoginTest"/>
+        </classes>
+    </test>
+    <test name="Sorting Tests">
+        <classes>
+            <class name="Sorting"/>
+        </classes>
+    </test>
+    <test name="Inventory Tests">
+        <classes>
+            <class name="Inventory"/>
+        </classes>
+    </test>
+    <test name="ProductPage Tests">
+        <classes>
+            <class name="ProductPage"/>
+        </classes>
+    </test>
+
+
+
+</suite>
