@@ -1,11 +1,12 @@
 # NHA-247
 
 Project Planning for SwagLabs Testing Project
-1. Project Overview
+1. Project Overview:
 •	Project Name: SwagLabs Testing Project + Mini API Testing Project
 •	Objective: To ensure the functionality and reliability of the SwagLabs e-commerce platform through manual and automated testing. 
 To verify the functionality, reliability, and performance of an API by executing automated and/or manual API tests.
-•	Scope:
+
+3. Scope:
 o	Functional testing of login, inventory, product pages, sorting, and cart operations.
 o	Validation of product details (name, price, description).
 o	Verification of cart behavior (add, remove, persistence).
