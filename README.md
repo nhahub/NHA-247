@@ -85,5 +85,6 @@ ________________________________________
 ________________________________________
 Notes:
 -   Use environment variables for token ,url and userId. Token: (c6b9c604e82d3ea1551dd051dbe3912fa760c2425261f000e6c71c2ef7d7236c)
+-   API documentation https://documenter.getpostman.com/view/34803337/2sB3WyKGKJ
 -   Check negative cases: invalid token, invalid email, missing fields.
 
