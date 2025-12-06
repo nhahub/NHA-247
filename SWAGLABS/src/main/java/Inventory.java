@@ -161,8 +161,6 @@ public class Inventory {
         TestReport.add(className, "Multiple Add/Remove Test", status, expected, actual);
     }
 
-
-
     //Test without Login
     public static void testInventoryWithoutLogin(WebDriver driver) {
         String className = "Inventory";
