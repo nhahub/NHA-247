@@ -1,0 +1,27 @@
+package tests;
+
+import org.testng.Assert;
+import org.testng.annotations.*;
+
+public class LoginTest extends BaseClass {
+
+    @Test(dataProvider = "loginData")
+    public void testLogin(String username,String password,String errorMessage) {
+        username().sendKeys(username);
+        password().sendKeys(password);
+        LoginBtn().click();
+
+        // Get the error message displayed on the page, if any
+        String error_Message= error_Message_Test();
+
+        // Check if no error message is returned (successful login)
+        if (error_Message == null){
+            Assert.assertEquals(driver.getCurrentUrl(),"https://www.saucedemo.com/inventory.html",
+                    "User: '"+username+"', The URL should redirect to the inventory page after a successful login.");
+        }
+
+        // Assert that the error message matches the expected error message (in case of login failure)
+        Assert.assertEquals(errorMessage, error_Message,
+                "User: '"+username+"', The error message displayed does not match the expected error message.");
+    }
+}
