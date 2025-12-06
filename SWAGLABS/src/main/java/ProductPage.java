@@ -112,7 +112,7 @@ public class ProductPage {
         if (remove.isDisplayed() && badge.getText().equals("1")) {
             status = "PASS";
             actual = "Item added and badge = " + badge.getText();
-            remove.click(); // Reset
+
         } else {
             status = "FAIL";
             actual = "Add to cart failed";
@@ -124,7 +124,7 @@ public class ProductPage {
         String actual1 = "";
         String status1 = "";
 
-        driver.findElement(By.id("add-to-cart")).click();
+
         driver.findElement(By.id("remove")).click();
 
         List<WebElement> badge1 = driver.findElements(By.className("shopping_cart_badge"));
