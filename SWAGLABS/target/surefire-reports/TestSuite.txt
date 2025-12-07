@@ -1,0 +1,282 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 84, Failures: 24, Errors: 0, Skipped: 0, Time elapsed: 551.16 s <<< FAILURE! - in TestSuite
+tests.ProductPageTest.test_Add_Remove_Item[problem_user, secret_sauce](2)  Time elapsed: 2.221 s  <<< FAILURE!
+java.lang.AssertionError: 
+The following asserts failed:
+	expected [true] but found [false],
+	User : 'problem_user', Product ID: item_1',Test failed: Product not added to cart.,
+	User : 'problem_user', Product ID: item_1', Test failed: Cart badge still visible.,
+	User : 'problem_user', Product ID: item_5',Test failed: Product not added to cart.,
+	User : 'problem_user', Product ID: item_5', Test failed: Cart badge still visible.,
+	expected [true] but found [false],
+	User : 'problem_user', Product ID: item_3',Test failed: Product not added to cart.,
+	User : 'problem_user', Product ID: item_3', Test failed: Cart badge still visible.
+	at tests.ProductPageTest.test_Add_Remove_Item(ProductPageTest.java:180)
+
+tests.InventoryTest.testInventoryItems[visual_user, secret_sauce](5)  Time elapsed: 0.919 s  <<< FAILURE!
+java.lang.AssertionError: 
+The following asserts failed:
+	User : 'visual_user', The price of the product is incorrect for item 1 : Sauce Labs Backpack expected [$29.99] but found [$47.22],
+	User : 'visual_user', The price of the product is incorrect for item 2 : Sauce Labs Bike Light expected [$9.99] but found [$44.12],
+	User : 'visual_user', The price of the product is incorrect for item 3 : Sauce Labs Bolt T-Shirt expected [$15.99] but found [$0.06],
+	User : 'visual_user', The price of the product is incorrect for item 4 : Sauce Labs Fleece Jacket expected [$49.99] but found [$72.2],
+	User : 'visual_user', The price of the product is incorrect for item 5 : Sauce Labs Onesie expected [$7.99] but found [$57.98],
+	User : 'visual_user', The price of the product is incorrect for item 6 : Test.allTheThings() T-Shirt (Red) expected [$15.99] but found [$76.83]
+	at tests.InventoryTest.testInventoryItems(InventoryTest.java:109)
+
+tests.ProductPageTest.test_Add_Remove_Item[error_user, secret_sauce](4)  Time elapsed: 1.673 s  <<< FAILURE!
+java.lang.AssertionError: 
+The following asserts failed:
+	expected [true] but found [false],
+	User : 'error_user', Product ID: item_1',Test failed: Product not added to cart.,
+	User : 'error_user', Product ID: item_1', Test failed: Cart badge still visible.,
+	User : 'error_user', Product ID: item_5',Test failed: Product not added to cart.,
+	User : 'error_user', Product ID: item_5', Test failed: Cart badge still visible.,
+	expected [true] but found [false],
+	User : 'error_user', Product ID: item_3',Test failed: Product not added to cart.,
+	User : 'error_user', Product ID: item_3', Test failed: Cart badge still visible.
+	at tests.ProductPageTest.test_Add_Remove_Item(ProductPageTest.java:180)
+
+tests.InventoryTest.test_Add_Remove_Item[problem_user, secret_sauce](2)  Time elapsed: 1.259 s  <<< FAILURE!
+java.lang.AssertionError: 
+The following asserts failed:
+	User : 'problem_user', Sauce Labs Bolt T-Shirt: remove form cart button unclickable.,
+	User : 'problem_user', Sauce Labs Fleece Jacket: remove form cart button unclickable.,
+	User : 'problem_user', Test.allTheThings() T-Shirt (Red): remove form cart button unclickable.
+	at tests.InventoryTest.test_Add_Remove_Item(InventoryTest.java:65)
+
+tests.SortingTest.sortingByNameZtoA[problem_user, secret_sauce](2)  Time elapsed: 1.135 s  <<< FAILURE!
+java.lang.AssertionError: User: 'problem_user', Item names should be sorted in descending alphabetical order.: Lists differ at element [0]: Sauce Labs Backpack != Test.allTheThings() T-Shirt (Red) expected [Sauce Labs Backpack] but found [Test.allTheThings() T-Shirt (Red)]
+	at tests.SortingTest.sortingByNameZtoA(SortingTest.java:67)
+
+tests.InventoryTest.test_Add_Remove_Item[error_user, secret_sauce](4)  Time elapsed: 1.996 s  <<< FAILURE!
+java.lang.AssertionError: 
+The following asserts failed:
+	User : 'error_user', Sauce Labs Bolt T-Shirt: remove form cart button unclickable.,
+	User : 'error_user', Sauce Labs Fleece Jacket: remove form cart button unclickable.,
+	User : 'error_user', Test.allTheThings() T-Shirt (Red): remove form cart button unclickable.
+	at tests.InventoryTest.test_Add_Remove_Item(InventoryTest.java:65)
+
+tests.SortingTest.sortingByNameZtoA[error_user, secret_sauce](4)  Time elapsed: 1.645 s  <<< FAILURE!
+java.lang.AssertionError: User: 'error_user', Item names should be sorted in descending alphabetical order.: Lists differ at element [0]: Sauce Labs Backpack != Test.allTheThings() T-Shirt (Red) expected [Sauce Labs Backpack] but found [Test.allTheThings() T-Shirt (Red)]
+	at tests.SortingTest.sortingByNameZtoA(SortingTest.java:67)
+
+tests.CartTest.verifyAddRemoveItemFromCart[problem_user, secret_sauce](2)  Time elapsed: 2.256 s  <<< FAILURE!
+java.lang.AssertionError: 
+The following asserts failed:
+	User : 'problem_user', The product: Sauce Labs Bolt T-Shirt, Add to Cart test failed: badge count did not decrease expected [true] but found [false],
+	User : 'problem_user', The product: Sauce Labs Bolt T-Shirt name does not match the expected name. expected [Sauce Labs Bolt T-Shirt] but found [Sauce Labs Bike Light],
+	User : 'problem_user', The product: Sauce Labs Bolt T-Shirt description does not match the expected description. expected [Get your testing superhero on with the Sauce Labs bolt T-shirt. From American Apparel, 100% ringspun combed cotton, heather gray with red bolt.] but found [A red light isn't the desired state in testing but it sure helps when riding your bike at night. Water-resistant with 3 lighting modes, 1 AAA battery included.],
+	User : 'problem_user',The product: Sauce Labs Bolt T-Shirt price does not match the expected price. expected [$15.99] but found [$9.99],
+	User : 'problem_user', The product: Sauce Labs Fleece Jacket, Add to Cart test failed: badge count did not decrease expected [true] but found [false],
+	User : 'problem_user', The product: Sauce Labs Fleece Jacket name does not match the expected name. expected [Sauce Labs Fleece Jacket] but found [Sauce Labs Bike Light],
+	User : 'problem_user', The product: Sauce Labs Fleece Jacket description does not match the expected description. expected [It's not every day that you come across a midweight quarter-zip fleece jacket capable of handling everything from a relaxing day outdoors to a busy day at the office.] but found [A red light isn't the desired state in testing but it sure helps when riding your bike at night. Water-resistant with 3 lighting modes, 1 AAA battery included.],
+	User : 'problem_user',The product: Sauce Labs Fleece Jacket price does not match the expected price. expected [$49.99] but found [$9.99],
+	User : 'problem_user', The product: Test.allTheThings() T-Shirt (Red), Add to Cart test failed: badge count did not decrease expected [true] but found [false],
+	User : 'problem_user', The product: Test.allTheThings() T-Shirt (Red) name does not match the expected name. expected [Test.allTheThings() T-Shirt (Red)] but found [Sauce Labs Onesie],
+	User : 'problem_user', The product: Test.allTheThings() T-Shirt (Red) description does not match the expected description. expected [This classic Sauce Labs t-shirt is perfect to wear when cozying up to your keyboard to automate a few tests. Super-soft and comfy ringspun combed cotton.] but found [Rib snap infant onesie for the junior automation engineer in development. Reinforced 3-snap bottom closure, two-needle hemmed sleeved and bottom won't unravel.],
+	User : 'problem_user',The product: Test.allTheThings() T-Shirt (Red) price does not match the expected price. expected [$15.99] but found [$7.99],
+	User : 'problem_user', The product: Sauce Labs Backpack, Add to Cart test failed: badge count did not decrease expected [true] but found [false],
+	User : 'problem_user', The product Sauce Labs Backpack was not removed from the cart. expected [false] but found [true],
+	User : 'problem_user', The product: Sauce Labs Bike Light, Add to Cart test failed: badge count did not decrease expected [true] but found [false],
+	User : 'problem_user', The product Sauce Labs Bike Light was not removed from the cart. expected [false] but found [true],
+	User : 'problem_user', The product: Sauce Labs Bolt T-Shirt, Add to Cart test failed: badge count did not decrease expected [true] but found [false],
+	User : 'problem_user', The product: Sauce Labs Fleece Jacket, Add to Cart test failed: badge count did not decrease expected [true] but found [false],
+	User : 'problem_user', The product: Sauce Labs Onesie, Add to Cart test failed: badge count did not decrease expected [true] but found [false],
+	User : 'problem_user', The product Sauce Labs Onesie was not removed from the cart. expected [false] but found [true],
+	User : 'problem_user', The product: Test.allTheThings() T-Shirt (Red), Add to Cart test failed: badge count did not decrease expected [true] but found [false]
+	at tests.CartTest.verifyAddRemoveItemFromCart(CartTest.java:128)
+
+tests.SortingTest.sortingByPriceHightoLow[problem_user, secret_sauce](2)  Time elapsed: 0.831 s  <<< FAILURE!
+java.lang.AssertionError: User: 'problem_user', Item prices should be sorted in descending order.: Lists differ at element [0]: 29.99 != 49.99 expected [29.99] but found [49.99]
+	at tests.SortingTest.sortingByPriceHightoLow(SortingTest.java:123)
+
+tests.SortingTest.sortingByPriceHightoLow[error_user, secret_sauce](4)  Time elapsed: 1.291 s  <<< FAILURE!
+java.lang.AssertionError: User: 'error_user', Item prices should be sorted in descending order.: Lists differ at element [0]: 29.99 != 49.99 expected [29.99] but found [49.99]
+	at tests.SortingTest.sortingByPriceHightoLow(SortingTest.java:123)
+
+tests.SortingTest.sortingByPriceHightoLow[visual_user, secret_sauce](5)  Time elapsed: 1.221 s  <<< FAILURE!
+java.lang.AssertionError: User: 'visual_user', Item prices should be sorted in descending order.: Lists differ at element [0]: 60.89 != 71.06 expected [60.89] but found [71.06]
+	at tests.SortingTest.sortingByPriceHightoLow(SortingTest.java:123)
+
+tests.SortingTest.sortingByPriceLowtoHigh[problem_user, secret_sauce](2)  Time elapsed: 1.317 s  <<< FAILURE!
+java.lang.AssertionError: User: 'problem_user', Item prices should be sorted in ascending order.: Lists differ at element [0]: 29.99 != 7.99 expected [29.99] but found [7.99]
+	at tests.SortingTest.sortingByPriceLowtoHigh(SortingTest.java:95)
+
+tests.CartTest.verifyAddRemoveItemFromCart[error_user, secret_sauce](4)  Time elapsed: 3.505 s  <<< FAILURE!
+java.lang.AssertionError: 
+The following asserts failed:
+	User : 'error_user', The product: Sauce Labs Bolt T-Shirt, Add to Cart test failed: badge count did not decrease expected [true] but found [false],
+	User : 'error_user', The product: Sauce Labs Bolt T-Shirt name does not match the expected name. expected [Sauce Labs Bolt T-Shirt] but found [Sauce Labs Bike Light],
+	User : 'error_user', The product: Sauce Labs Bolt T-Shirt description does not match the expected description. expected [Get your testing superhero on with the Sauce Labs bolt T-shirt. From American Apparel, 100% ringspun combed cotton, heather gray with red bolt.] but found [A red light isn't the desired state in testing but it sure helps when riding your bike at night. Water-resistant with 3 lighting modes, 1 AAA battery included.],
+	User : 'error_user',The product: Sauce Labs Bolt T-Shirt price does not match the expected price. expected [$15.99] but found [$9.99],
+	User : 'error_user', The product: Sauce Labs Fleece Jacket, Add to Cart test failed: badge count did not decrease expected [true] but found [false],
+	User : 'error_user', The product: Sauce Labs Fleece Jacket name does not match the expected name. expected [Sauce Labs Fleece Jacket] but found [Sauce Labs Bike Light],
+	User : 'error_user', The product: Sauce Labs Fleece Jacket description does not match the expected description. expected [It's not every day that you come across a midweight quarter-zip fleece jacket capable of handling everything from a relaxing day outdoors to a busy day at the office.] but found [A red light isn't the desired state in testing but it sure helps when riding your bike at night. Water-resistant with 3 lighting modes, 1 AAA battery included.],
+	User : 'error_user',The product: Sauce Labs Fleece Jacket price does not match the expected price. expected [$49.99] but found [$9.99],
+	User : 'error_user', The product: Test.allTheThings() T-Shirt (Red), Add to Cart test failed: badge count did not decrease expected [true] but found [false],
+	User : 'error_user', The product: Test.allTheThings() T-Shirt (Red) name does not match the expected name. expected [Test.allTheThings() T-Shirt (Red)] but found [Sauce Labs Onesie],
+	User : 'error_user', The product: Test.allTheThings() T-Shirt (Red) description does not match the expected description. expected [This classic Sauce Labs t-shirt is perfect to wear when cozying up to your keyboard to automate a few tests. Super-soft and comfy ringspun combed cotton.] but found [Rib snap infant onesie for the junior automation engineer in development. Reinforced 3-snap bottom closure, two-needle hemmed sleeved and bottom won't unravel.],
+	User : 'error_user',The product: Test.allTheThings() T-Shirt (Red) price does not match the expected price. expected [$15.99] but found [$7.99],
+	User : 'error_user', The product: Sauce Labs Backpack, Add to Cart test failed: badge count did not decrease expected [true] but found [false],
+	User : 'error_user', The product Sauce Labs Backpack was not removed from the cart. expected [false] but found [true],
+	User : 'error_user', The product: Sauce Labs Bike Light, Add to Cart test failed: badge count did not decrease expected [true] but found [false],
+	User : 'error_user', The product Sauce Labs Bike Light was not removed from the cart. expected [false] but found [true],
+	User : 'error_user', The product: Sauce Labs Bolt T-Shirt, Add to Cart test failed: badge count did not decrease expected [true] but found [false],
+	User : 'error_user', The product: Sauce Labs Fleece Jacket, Add to Cart test failed: badge count did not decrease expected [true] but found [false],
+	User : 'error_user', The product: Sauce Labs Onesie, Add to Cart test failed: badge count did not decrease expected [true] but found [false],
+	User : 'error_user', The product Sauce Labs Onesie was not removed from the cart. expected [false] but found [true],
+	User : 'error_user', The product: Test.allTheThings() T-Shirt (Red), Add to Cart test failed: badge count did not decrease expected [true] but found [false]
+	at tests.CartTest.verifyAddRemoveItemFromCart(CartTest.java:128)
+
+tests.SortingTest.sortingByPriceLowtoHigh[error_user, secret_sauce](4)  Time elapsed: 1.604 s  <<< FAILURE!
+java.lang.AssertionError: User: 'error_user', Item prices should be sorted in ascending order.: Lists differ at element [0]: 29.99 != 7.99 expected [29.99] but found [7.99]
+	at tests.SortingTest.sortingByPriceLowtoHigh(SortingTest.java:95)
+
+tests.SortingTest.sortingByPriceLowtoHigh[visual_user, secret_sauce](5)  Time elapsed: 2.078 s  <<< FAILURE!
+java.lang.AssertionError: User: 'visual_user', Item prices should be sorted in ascending order.: Lists differ at element [0]: 39.49 != 21.25 expected [39.49] but found [21.25]
+	at tests.SortingTest.sortingByPriceLowtoHigh(SortingTest.java:95)
+
+tests.ProductPageTest.validateProduct_Name_Price_Description[error_user, secret_sauce](4)  Time elapsed: 6.609 s  <<< FAILURE!
+java.lang.AssertionError: 
+The following asserts failed:
+	User : 'error_user', Product: 'Sauce Labs Backpack', Product description mismatch expected [carry.allTheThings() with the sleek, streamlined Sly Pack that melds uncompromising style with unequaled laptop and tablet protection.] but found [A description should be here, but it failed to render! This error has been reported to Backtrace.],
+	User : 'error_user', Product: 'Sauce Labs Bike Light', Product description mismatch expected [A red light isn't the desired state in testing but it sure helps when riding your bike at night. Water-resistant with 3 lighting modes, 1 AAA battery included.] but found [A description should be here, but it failed to render! This error has been reported to Backtrace.],
+	User : 'error_user', Product: 'Sauce Labs Bolt T-Shirt', Product description mismatch expected [Get your testing superhero on with the Sauce Labs bolt T-shirt. From American Apparel, 100% ringspun combed cotton, heather gray with red bolt.] but found [A description should be here, but it failed to render! This error has been reported to Backtrace.],
+	User : 'error_user', Product: 'Sauce Labs Fleece Jacket', Product description mismatch expected [It's not every day that you come across a midweight quarter-zip fleece jacket capable of handling everything from a relaxing day outdoors to a busy day at the office.] but found [A description should be here, but it failed to render! This error has been reported to Backtrace.],
+	User : 'error_user', Product: 'Sauce Labs Onesie', Product description mismatch expected [Rib snap infant onesie for the junior automation engineer in development. Reinforced 3-snap bottom closure, two-needle hemmed sleeved and bottom won't unravel.] but found [A description should be here, but it failed to render! This error has been reported to Backtrace.],
+	User : 'error_user', Product: 'Test.allTheThings() T-Shirt (Red)', Product description mismatch expected [This classic Sauce Labs t-shirt is perfect to wear when cozying up to your keyboard to automate a few tests. Super-soft and comfy ringspun combed cotton.] but found [A description should be here, but it failed to render! This error has been reported to Backtrace.]
+	at tests.ProductPageTest.validateProduct_Name_Price_Description(ProductPageTest.java:73)
+
+tests.OverviewTest.testFinishProcess[problem_user, secret_sauce](2)  Time elapsed: 1.912 s  <<< FAILURE!
+java.lang.AssertionError: checkout failed Error: Last Name is required expected [] but found [Error: Last Name is required]
+	at tests.OverviewTest.fillValidInfo(OverviewTest.java:29)
+	at tests.OverviewTest.testFinishProcess(OverviewTest.java:216)
+
+tests.CheckoutInfoTest.testCheckoutPage[problem_user, secret_sauce](2)  Time elapsed: 9.127 s  <<< FAILURE!
+java.lang.AssertionError: 
+The following asserts failed:
+	User : 'problem_user', The error message is incorrect for the provided user details. First Name :  Last Name : Doe zip Code: 67890 expected [Error: First Name is required] but found [Error: Last Name is required],
+	User : 'problem_user', The error message is incorrect for the provided user details. First Name : John Last Name : Doe zip Code:  expected [Error: Postal Code is required] but found [Error: Last Name is required],
+	User : 'problem_user', The error message is incorrect for the provided user details. First Name : John Last Name : Doe zip Code: 12345 expected [] but found [Error: Last Name is required],
+	User : 'problem_user', The error message is incorrect for the provided user details. First Name : J0hn Last Name : D@e zip Code: 123-45 expected [] but found [Error: Last Name is required],
+	User : 'problem_user', The error message is incorrect for the provided user details. First Name : J Last Name : D zip Code: 1 expected [] but found [Error: Last Name is required],
+	User : 'problem_user', The error message is incorrect for the provided user details. First Name : John@# Last Name : Doe$% zip Code: ABCDE expected [] but found [Error: Last Name is required],
+	User : 'problem_user', The error message is incorrect for the provided user details. First Name :     Last Name :     zip Code:     expected [] but found [Error: Last Name is required],
+	User : 'problem_user', The error message is incorrect for the provided user details. First Name : John Doe Last Name : Smith zip Code:  12345  expected [] but found [Error: Last Name is required],
+	User : 'problem_user', The error message is incorrect for the provided user details. First Name : John123 Last Name : Doe456 zip Code: 001234 expected [] but found [Error: Last Name is required],
+	User : 'problem_user', The error message is incorrect for the provided user details. First Name : JohnDoe Last Name : LongLastNameHereThatExceedsNormalLength zip Code: 123456789012345 expected [] but found [Error: Last Name is required],
+	User : 'problem_user', The error message is incorrect for the provided user details. First Name : Jo$hn Last Name : Do^e zip Code: 12345! expected [] but found [Error: Last Name is required],
+	User : 'problem_user', The error message is incorrect for the provided user details. First Name : J@hn Last Name : D#oe zip Code: 12-345 expected [] but found [Error: Last Name is required],
+	User : 'problem_user', The error message is incorrect for the provided user details. First Name :  Last Name : Doe zip Code: 67890 expected [Error: First Name is required] but found [Error: Last Name is required],
+	User : 'problem_user', The error message is incorrect for the provided user details. First Name : John Last Name : Doe zip Code:  expected [Error: Postal Code is required] but found [Error: Last Name is required],
+	User : 'problem_user', The error message is incorrect for the provided user details. First Name : John Last Name : Doe zip Code: 12345 expected [] but found [Error: Last Name is required],
+	User : 'problem_user', The error message is incorrect for the provided user details. First Name : J0hn Last Name : D@e zip Code: 123-45 expected [] but found [Error: Last Name is required],
+	User : 'problem_user', The error message is incorrect for the provided user details. First Name : J Last Name : D zip Code: 1 expected [] but found [Error: Last Name is required],
+	User : 'problem_user', The error message is incorrect for the provided user details. First Name : John@# Last Name : Doe$% zip Code: ABCDE expected [] but found [Error: Last Name is required],
+	User : 'problem_user', The error message is incorrect for the provided user details. First Name :     Last Name :     zip Code:     expected [] but found [Error: Last Name is required],
+	User : 'problem_user', The error message is incorrect for the provided user details. First Name : John Doe Last Name : Smith zip Code:  12345  expected [] but found [Error: Last Name is required],
+	User : 'problem_user', The error message is incorrect for the provided user details. First Name : John123 Last Name : Doe456 zip Code: 001234 expected [] but found [Error: Last Name is required],
+	User : 'problem_user', The error message is incorrect for the provided user details. First Name : JohnDoe Last Name : LongLastNameHereThatExceedsNormalLength zip Code: 123456789012345 expected [] but found [Error: Last Name is required],
+	User : 'problem_user', The error message is incorrect for the provided user details. First Name : Jo$hn Last Name : Do^e zip Code: 12345! expected [] but found [Error: Last Name is required],
+	User : 'problem_user', The error message is incorrect for the provided user details. First Name : J@hn Last Name : D#oe zip Code: 12-345 expected [] but found [Error: Last Name is required],
+	User : 'problem_user', Product: 'Sauce Labs Bolt T-Shirt', name does not match the expected name. expected [Sauce Labs Bolt T-Shirt] but found [Sauce Labs Bike Light],
+	User : 'problem_user', The error message is incorrect for the provided user details. First Name :  Last Name : Doe zip Code: 67890 expected [Error: First Name is required] but found [Error: Last Name is required],
+	User : 'problem_user', The error message is incorrect for the provided user details. First Name : John Last Name : Doe zip Code:  expected [Error: Postal Code is required] but found [Error: Last Name is required],
+	User : 'problem_user', The error message is incorrect for the provided user details. First Name : John Last Name : Doe zip Code: 12345 expected [] but found [Error: Last Name is required],
+	User : 'problem_user', The error message is incorrect for the provided user details. First Name : J0hn Last Name : D@e zip Code: 123-45 expected [] but found [Error: Last Name is required],
+	User : 'problem_user', The error message is incorrect for the provided user details. First Name : J Last Name : D zip Code: 1 expected [] but found [Error: Last Name is required],
+	User : 'problem_user', The error message is incorrect for the provided user details. First Name : John@# Last Name : Doe$% zip Code: ABCDE expected [] but found [Error: Last Name is required],
+	User : 'problem_user', The error message is incorrect for the provided user details. First Name :     Last Name :     zip Code:     expected [] but found [Error: Last Name is required],
+	User : 'problem_user', The error message is incorrect for the provided user details. First Name : John Doe Last Name : Smith zip Code:  12345  expected [] but found [Error: Last Name is required],
+	User : 'problem_user', The error message is incorrect for the provided user details. First Name : John123 Last Name : Doe456 zip Code: 001234 expected [] but found [Error: Last Name is required],
+	User : 'problem_user', The error message is incorrect for the provided user details. First Name : JohnDoe Last Name : LongLastNameHereThatExceedsNormalLength zip Code: 123456789012345 expected [] but found [Error: Last Name is required],
+	User : 'problem_user', The error message is incorrect for the provided user details. First Name : Jo$hn Last Name : Do^e zip Code: 12345! expected [] but found [Error: Last Name is required],
+	User : 'problem_user', The error message is incorrect for the provided user details. First Name : J@hn Last Name : D#oe zip Code: 12-345 expected [] but found [Error: Last Name is required],
+	User : 'problem_user', Product: 'Sauce Labs Fleece Jacket', name does not match the expected name. expected [Sauce Labs Fleece Jacket] but found [Sauce Labs Bike Light],
+	User : 'problem_user', The error message is incorrect for the provided user details. First Name :  Last Name : Doe zip Code: 67890 expected [Error: First Name is required] but found [Error: Last Name is required],
+	User : 'problem_user', The error message is incorrect for the provided user details. First Name : John Last Name : Doe zip Code:  expected [Error: Postal Code is required] but found [Error: Last Name is required],
+	User : 'problem_user', The error message is incorrect for the provided user details. First Name : John Last Name : Doe zip Code: 12345 expected [] but found [Error: Last Name is required],
+	User : 'problem_user', The error message is incorrect for the provided user details. First Name : J0hn Last Name : D@e zip Code: 123-45 expected [] but found [Error: Last Name is required],
+	User : 'problem_user', The error message is incorrect for the provided user details. First Name : J Last Name : D zip Code: 1 expected [] but found [Error: Last Name is required],
+	User : 'problem_user', The error message is incorrect for the provided user details. First Name : John@# Last Name : Doe$% zip Code: ABCDE expected [] but found [Error: Last Name is required],
+	User : 'problem_user', The error message is incorrect for the provided user details. First Name :     Last Name :     zip Code:     expected [] but found [Error: Last Name is required],
+	User : 'problem_user', The error message is incorrect for the provided user details. First Name : John Doe Last Name : Smith zip Code:  12345  expected [] but found [Error: Last Name is required],
+	User : 'problem_user', The error message is incorrect for the provided user details. First Name : John123 Last Name : Doe456 zip Code: 001234 expected [] but found [Error: Last Name is required],
+	User : 'problem_user', The error message is incorrect for the provided user details. First Name : JohnDoe Last Name : LongLastNameHereThatExceedsNormalLength zip Code: 123456789012345 expected [] but found [Error: Last Name is required],
+	User : 'problem_user', The error message is incorrect for the provided user details. First Name : Jo$hn Last Name : Do^e zip Code: 12345! expected [] but found [Error: Last Name is required],
+	User : 'problem_user', The error message is incorrect for the provided user details. First Name : J@hn Last Name : D#oe zip Code: 12-345 expected [] but found [Error: Last Name is required],
+	User : 'problem_user', The error message is incorrect for the provided user details. First Name :  Last Name : Doe zip Code: 67890 expected [Error: First Name is required] but found [Error: Last Name is required],
+	User : 'problem_user', The error message is incorrect for the provided user details. First Name : John Last Name : Doe zip Code:  expected [Error: Postal Code is required] but found [Error: Last Name is required],
+	User : 'problem_user', The error message is incorrect for the provided user details. First Name : John Last Name : Doe zip Code: 12345 expected [] but found [Error: Last Name is required],
+	User : 'problem_user', The error message is incorrect for the provided user details. First Name : J0hn Last Name : D@e zip Code: 123-45 expected [] but found [Error: Last Name is required],
+	User : 'problem_user', The error message is incorrect for the provided user details. First Name : J Last Name : D zip Code: 1 expected [] but found [Error: Last Name is required],
+	User : 'problem_user', The error message is incorrect for the provided user details. First Name : John@# Last Name : Doe$% zip Code: ABCDE expected [] but found [Error: Last Name is required],
+	User : 'problem_user', The error message is incorrect for the provided user details. First Name :     Last Name :     zip Code:     expected [] but found [Error: Last Name is required],
+	User : 'problem_user', The error message is incorrect for the provided user details. First Name : John Doe Last Name : Smith zip Code:  12345  expected [] but found [Error: Last Name is required],
+	User : 'problem_user', The error message is incorrect for the provided user details. First Name : John123 Last Name : Doe456 zip Code: 001234 expected [] but found [Error: Last Name is required],
+	User : 'problem_user', The error message is incorrect for the provided user details. First Name : JohnDoe Last Name : LongLastNameHereThatExceedsNormalLength zip Code: 123456789012345 expected [] but found [Error: Last Name is required],
+	User : 'problem_user', The error message is incorrect for the provided user details. First Name : Jo$hn Last Name : Do^e zip Code: 12345! expected [] but found [Error: Last Name is required],
+	User : 'problem_user', The error message is incorrect for the provided user details. First Name : J@hn Last Name : D#oe zip Code: 12-345 expected [] but found [Error: Last Name is required],
+	User : 'problem_user', Product: 'Test.allTheThings() T-Shirt (Red)', name does not match the expected name. expected [Test.allTheThings() T-Shirt (Red)] but found [Sauce Labs Onesie],
+	User : 'problem_user', The error message is incorrect for the provided user details. First Name :  Last Name : Doe zip Code: 67890 expected [Error: First Name is required] but found [Error: Last Name is required],
+	User : 'problem_user', The error message is incorrect for the provided user details. First Name : John Last Name : Doe zip Code:  expected [Error: Postal Code is required] but found [Error: Last Name is required],
+	User : 'problem_user', The error message is incorrect for the provided user details. First Name : John Last Name : Doe zip Code: 12345 expected [] but found [Error: Last Name is required],
+	User : 'problem_user', The error message is incorrect for the provided user details. First Name : J0hn Last Name : D@e zip Code: 123-45 expected [] but found [Error: Last Name is required],
+	User : 'problem_user', The error message is incorrect for the provided user details. First Name : J Last Name : D zip Code: 1 expected [] but found [Error: Last Name is required],
+	User : 'problem_user', The error message is incorrect for the provided user details. First Name : John@# Last Name : Doe$% zip Code: ABCDE expected [] but found [Error: Last Name is required],
+	User : 'problem_user', The error message is incorrect for the provided user details. First Name :     Last Name :     zip Code:     expected [] but found [Error: Last Name is required],
+	User : 'problem_user', The error message is incorrect for the provided user details. First Name : John Doe Last Name : Smith zip Code:  12345  expected [] but found [Error: Last Name is required],
+	User : 'problem_user', The error message is incorrect for the provided user details. First Name : John123 Last Name : Doe456 zip Code: 001234 expected [] but found [Error: Last Name is required],
+	User : 'problem_user', The error message is incorrect for the provided user details. First Name : JohnDoe Last Name : LongLastNameHereThatExceedsNormalLength zip Code: 123456789012345 expected [] but found [Error: Last Name is required],
+	User : 'problem_user', The error message is incorrect for the provided user details. First Name : Jo$hn Last Name : Do^e zip Code: 12345! expected [] but found [Error: Last Name is required],
+	User : 'problem_user', The error message is incorrect for the provided user details. First Name : J@hn Last Name : D#oe zip Code: 12-345 expected [] but found [Error: Last Name is required]
+	at tests.CheckoutInfoTest.testCheckoutPage(CheckoutInfoTest.java:88)
+
+tests.OverviewTest.testFinishProcess[error_user, secret_sauce](4)  Time elapsed: 0.821 s  <<< FAILURE!
+java.lang.AssertionError: expected [https://www.saucedemo.com/checkout-complete.html] but found [https://www.saucedemo.com/checkout-step-two.html]
+	at tests.OverviewTest.testFinishProcess(OverviewTest.java:223)
+
+tests.OverviewTest.testOverviewPage[problem_user, secret_sauce](2)  Time elapsed: 0.802 s  <<< FAILURE!
+java.lang.AssertionError: checkout failed Error: Last Name is required expected [] but found [Error: Last Name is required]
+	at tests.OverviewTest.fillValidInfo(OverviewTest.java:29)
+	at tests.OverviewTest.testOverviewPage(OverviewTest.java:74)
+
+tests.OverviewTest.testOverviewPage[error_user, secret_sauce](4)  Time elapsed: 7.947 s  <<< FAILURE!
+java.lang.AssertionError: 
+The following asserts failed:
+	The product: Sauce Labs Bike Light name does not match the expected name. expected [Sauce Labs Bolt T-Shirt] but found [Sauce Labs Bike Light],
+	The product: Sauce Labs Bike Light name does not match the expected name. expected [Sauce Labs Fleece Jacket] but found [Sauce Labs Bike Light],
+	The product: Sauce Labs Onesie name does not match the expected name. expected [Test.allTheThings() T-Shirt (Red)] but found [Sauce Labs Onesie]
+	at tests.OverviewTest.testOverviewPage(OverviewTest.java:111)
+
+tests.OverviewTest.testTotalPrice[problem_user, secret_sauce](2)  Time elapsed: 1.079 s  <<< FAILURE!
+java.lang.AssertionError: checkout failed Error: Last Name is required expected [] but found [Error: Last Name is required]
+	at tests.OverviewTest.fillValidInfo(OverviewTest.java:29)
+	at tests.OverviewTest.testTotalPrice(OverviewTest.java:158)
+
+tests.CheckoutInfoTest.testCheckoutPage[error_user, secret_sauce](4)  Time elapsed: 15.418 s  <<< FAILURE!
+java.lang.AssertionError: 
+The following asserts failed:
+	User : 'error_user', The error message is incorrect for the provided user details. First Name : John Last Name :  zip Code: 67890 expected [Error: Last Name is required] but found [],
+	User : 'error_user', The error message is incorrect for the provided user details. First Name : John Last Name :  zip Code: 67890 expected [Error: Last Name is required] but found [],
+	User : 'error_user', Product: 'Sauce Labs Bolt T-Shirt', name does not match the expected name. expected [Sauce Labs Bolt T-Shirt] but found [Sauce Labs Bike Light],
+	User : 'error_user', The error message is incorrect for the provided user details. First Name : John Last Name :  zip Code: 67890 expected [Error: Last Name is required] but found [],
+	User : 'error_user', Product: 'Sauce Labs Fleece Jacket', name does not match the expected name. expected [Sauce Labs Fleece Jacket] but found [Sauce Labs Bike Light],
+	User : 'error_user', The error message is incorrect for the provided user details. First Name : John Last Name :  zip Code: 67890 expected [Error: Last Name is required] but found [],
+	User : 'error_user', The error message is incorrect for the provided user details. First Name : John Last Name :  zip Code: 67890 expected [Error: Last Name is required] but found [],
+	User : 'error_user', Product: 'Test.allTheThings() T-Shirt (Red)', name does not match the expected name. expected [Test.allTheThings() T-Shirt (Red)] but found [Sauce Labs Onesie],
+	User : 'error_user', The error message is incorrect for the provided user details. First Name : John Last Name :  zip Code: 67890 expected [Error: Last Name is required] but found []
+	at tests.CheckoutInfoTest.testCheckoutPage(CheckoutInfoTest.java:88)
+
+tests.OverviewTest.testTotalPrice[error_user, secret_sauce](4)  Time elapsed: 7.322 s  <<< FAILURE!
+java.lang.AssertionError: 
+The following asserts failed:
+	The total price calculation is incorrect! expected [59.17] but found [43.18],
+	The total price calculation is incorrect! expected [109.16000000000001] but found [43.18],
+	The total price calculation is incorrect! expected [117.79] but found [51.81],
+	The total price calculation is incorrect! expected [133.78] but found [51.81]
+	at tests.OverviewTest.testTotalPrice(OverviewTest.java:177)
+
